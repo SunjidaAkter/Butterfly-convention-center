@@ -15,65 +15,416 @@
 </head>
 
 <body>
-    <h1 class="red">Convention Center</h1>
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    Accordion Item #1
+    <header>
+        <!-- nav bar -->
+
+        <nav class="py-4 navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container ">
+                <a class="navbar-brand " href="#">
+                    <h4>Butterfly Convention Center</h4>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-                    plugin adds the appropriate classes that we use to style each element. These classes control the
-                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
-                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
-                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- carousel -->
+
+        <div id="carouselExampleCaptions" class="mt-5 pt-5 carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/banner.png" class="d-block  w-100" alt="wedding">
+                    <div class="">
+                        <div class="carousel-caption fs-6 d-sm-block  d-md-block">
+                            <h1 class="">The perfect venue for your <br>
+                                next event</h1>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit </p>
+                            <button type="button" class="btn btn-primary">Primary</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/al-elmes-ULHxWq8reao-unsplash (1).jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption mt-sm-2 d-md-block">
+                        <h1>The perfect venue for your <br>
+                            next event</h1>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit </p>
+                        <button type="button" class="btn btn-primary">Primary</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/alvaro-cvg-mW8IZdX7n8E-unsplash (1).jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <h1>The perfect venue for your <br>
+                            next event</h1>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit </p>
+                        <button type="button" class="btn btn-primary">Primary</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- toast massag -->
+        <div class="container d-flex justify-content-end">
+            <div class="toast show  align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="width: 22px;height: 23px;" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                        </svg> Hello, world! This is a toast message.
+                    </div>
+                    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
                 </div>
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Accordion Item #2
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                    collapse plugin adds the appropriate classes that we use to style each element. These classes
-                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
-                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
-                    overflow.
+    </header>
+    <main>
+        <section class="container">
+            <div class="border-0 card my-5" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./images/wedding.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="ms-5 card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                    collapse plugin adds the appropriate classes that we use to style each element. These classes
-                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
-                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
-                    overflow.
+        </section>
+        <section class="container">
+            <div class="row ">
+                <div class="col-md-3">
+                    <div class="card border-0 mt-5 w-90">
+                        <h1>$300</h1>
+                        <h3>Business Fair</h3>
+                        <p>For most businesses event <br>
+                            like book fair, craft fair.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>Limited Space Access</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+
+                        </ul>
+                        <button type="button" class=" mt-2 py-2 pink-button rounded-pill">Choose Plan</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 mt-5 w-90">
+                        <h1>$300</h1>
+                        <h3>Business Fair</h3>
+                        <p>For most businesses event <br>
+                            like book fair, craft fair.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>Limited Space Access</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+
+                        </ul>
+                        <button type="button" class=" mt-2 py-2 pink-button rounded-pill">Choose Plan</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="border-0 rounded-3  third-background position-relative mb-5 py-4 shadow-lg ps-2 w-90">
+                        <p class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">BEST
+                        </p>
+                        <h1>$300</h1>
+                        <h3>Business Fair</h3>
+                        <p>For most businesses event <br>
+                            like book fair, craft fair.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>Limited Space Access</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+
+                        </ul>
+                        <button type="button" class=" mt-2 py-2 pink-button rounded-pill">Choose Plan</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 mt-5 w-90">
+                        <h1>$300</h1>
+                        <h3>Business Fair</h3>
+                        <p>For most businesses event <br>
+                            like book fair, craft fair.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>Limited Space Access</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+                            <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
+                                    style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg>An item</li>
+
+                        </ul>
+                        <button type="button" class=" mt-2 py-2 pink-button rounded-pill">Choose Plan</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+
+        </section>
+        <section class="container">
+            <h1 class="my-5 py-5 align-center">Frequently Asked Questions</h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until
+                                    the collapse plugin adds the appropriate classes that we use to style each element.
+                                    These classes control the overall appearance, as well as the showing and hiding via
+                                    CSS
+                                    transitions. You can modify any of this with custom CSS or overriding our default
+                                    variables. It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding
+                                    via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                    default variables. It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until
+                                    the collapse plugin adds the appropriate classes that we use to style each element.
+                                    These classes control the overall appearance, as well as the showing and hiding via
+                                    CSS
+                                    transitions. You can modify any of this with custom CSS or overriding our default
+                                    variables. It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until
+                                    the collapse plugin adds the appropriate classes that we use to style each element.
+                                    These classes control the overall appearance, as well as the showing and hiding via
+                                    CSS
+                                    transitions. You can modify any of this with custom CSS or overriding our default
+                                    variables. It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="w-100" src="./images/people.png" alt="">
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <section class="container-fluid mt-5 py-5 bg-dark">
+            <div class="container d-flex justify-content-between align-items-center ">
+                <div>
+                    <p class="text-white">© 2020 bike. All rights reserved</p>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <p class="text-white">Get the app</p>
+                    <button type="button" class=" m-2 p-0 border-0"><a href=""><img class="w-100"
+                                src="./images/270152317_255777569967760_7316592442369682871_n.png" alt=""></a></button>
+                    <button type="button" class=" m-0 p-0 border-0"><a href=""><img class="w-100"
+                                src="./images/271820322_450480463465282_8217112429997224105_n.png" alt=""></a></button>
+                </div>
+            </div>
+        </section>
+    </footer>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

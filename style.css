@@ -1,3 +1,21 @@
-.red{
-    color: red;
+.no-border{
+    border: 0;
+}
+
+.list{
+    list-style: none;
+}
+.svg{
+
+    background-color:rgba(82, 67, 194, 0.103693) ;
+    color: #5243C2;
+}
+.pink-button {
+    background-color: #f496d22a;
+   border: 0;
+    
+}
+.third-background{
+    background-color: rgba(0, 0, 0, 0.61);
+    color: white;
 }

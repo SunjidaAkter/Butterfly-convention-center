@@ -18,7 +18,7 @@
     <header>
         <!-- nav bar -->
 
-        <nav class="py-4 navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="py-4 py-xs-1 navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container ">
                 <a class="navbar-brand " href="#">
                     <h4>Butterfly Convention Center</h4>
@@ -58,36 +58,44 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./images/banner.png" class="d-block  w-100" alt="wedding">
+                <div style="height: 584px; object-fit: cover;" class="carousel-item active">
+                    <img src="./images/banner.png" class="d-block h-100 w-100" alt="wedding">
                     <div class="">
-                        <div class="carousel-caption fs-6 d-sm-block  d-md-block">
-                            <h1 class="">The perfect venue for your <br>
+                        <div class="carousel-caption mb-0  d-sm-block  d-md-block">
+                            <h1 class="cursive-header">The perfect venue for your <br>
                                 next event</h1>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                                consequat duis enim velit </p>
-                            <button type="button" class="btn btn-primary">Primary</button>
+                            <p class="para-w">When organizing an event, you're confronted with many decisions, but
+                                choosing the right venue and location is the one decision that will have the largest
+                                impact on your event. </p>
+                            <button type="button" class="banner-button border-0 px-4 py-2 rounded-3"><a class="none"
+                                    target="_blank" href="https://tinypng.com/">Book
+                                    Now</a></button>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./images/al-elmes-ULHxWq8reao-unsplash (1).jpg" class="d-block w-100" alt="...">
+                <div style="height: 584px; object-fit: cover;" class="carousel-item">
+                    <img src="./images/andreas-ronningen-S2YssLw97l4-unsplash.jpg" class="d-block h-100 w-100 "
+                        alt="...">
                     <div class="carousel-caption mt-sm-2 d-md-block">
-                        <h1>The perfect venue for your <br>
+                        <h1 class="cursive-header">The perfect venue for your <br>
                             next event</h1>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                            consequat duis enim velit </p>
-                        <button type="button" class="btn btn-primary">Primary</button>
+                        <p class="para-w">Everything from the date of the event, speaker lineups, catering options, and
+                            attendees experience depend on the event venue and location you select. </p>
+                        <button type="button" class="banner-button border-0 px-4 py-2 rounded-3"><a class="none"
+                                target="_blank" href="https://tinypng.com/">Book
+                                Now</a></button>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./images/alvaro-cvg-mW8IZdX7n8E-unsplash (1).jpg" class="d-block w-100" alt="...">
+                <div style="height: 584px; object-fit: cover;" class="carousel-item">
+                    <img src="./images/devi-firdaus-KWHfdGM1fU4-unsplash.jpg" class="d-block h-100 w-100" alt="...">
                     <div class="carousel-caption  d-md-block">
-                        <h1>The perfect venue for your <br>
+                        <h1 class="cursive-header">The perfect venue for your <br>
                             next event</h1>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                            consequat duis enim velit </p>
-                        <button type="button" class="btn btn-primary">Primary</button>
+                        <p class="para-w">You don't have to feel intimidating. Here are some guidelines about when to
+                            make decision, what to consider, and how to do better. </p>
+                        <button type="button" class="banner-button border-0 px-4 py-2 rounded-3"><a class="none"
+                                target="_blank" href="https://tinypng.com/">Book
+                                Now</a></button>
                     </div>
                 </div>
             </div>
@@ -106,12 +114,13 @@
         <div class="container d-flex justify-content-end">
             <div class="toast show  align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="d-flex">
-                    <div class="toast-body">
-                        <svg xmlns="http://www.w3.org/2000/svg" style="width: 22px;height: 23px;" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="toast-body d-flex left-border">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="color: rgb(58, 1, 1); width: 22px;height: 23px;"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                        </svg> Hello, world! This is a toast message.
+                        </svg>
+                        <p class="para ms-4">20% off on next booking.</p>
                     </div>
                     <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
                         aria-label="Close"></button>
@@ -120,28 +129,16 @@
         </div>
     </header>
     <main>
+
+        <!-- packages -->
+
+
         <section class="container">
-            <div class="border-0 card my-5" style="max-width: 100%;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./images/wedding.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="ms-5 card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="container">
+            <h1 class="all-head my-5 py-5 text-center">Our Packages</h1>
             <div class="row ">
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3 ">
                     <div class="card border-0 mt-5 w-90">
-                        <h1>$300</h1>
+                        <h2>$300</h2>
                         <h3>Business Fair</h3>
                         <p>For most businesses event <br>
                             like book fair, craft fair.</p>
@@ -157,184 +154,184 @@
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Security Facility</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Event Support</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Decoration Design</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Per Day Bill</li>
 
                         </ul>
-                        <button type="button" class=" mt-2 py-2 pink-button rounded-pill">Choose Plan</button>
+                        <button type="button" class=" mt-2 py-2 pink-button rounded-pill"><a target="_blank"
+                                class="last-none" href="https://tinypng.com/">Choose Plan</a></button>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card border-0 mt-5 w-90">
-                        <h1>$300</h1>
-                        <h3>Business Fair</h3>
-                        <p>For most businesses event <br>
-                            like book fair, craft fair.</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 mt-5 mb-5 w-90">
+                        <h2>$500</h2>
+                        <h3>Wedding Basic</h3>
+                        <p>For wedding with basic plan <br>
+                            and limited item</p>
                         <ul class="list-group list-group-flush">
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>Limited Space Access</li>
+                                </svg>Full Space Access</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Food Arrangement</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Management Support</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Decoration Design</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Billed as Shift</li>
 
                         </ul>
-                        <button type="button" class=" mt-2 py-2 pink-button rounded-pill">Choose Plan</button>
+                        <button type="button" class=" mt-2 py-2 pink-button rounded-pill"><a target="_blank"
+                                class="last-none" href="https://tinypng.com/">Choose Plan</a></button>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="border-0 rounded-3  third-background position-relative mb-5 py-4 shadow-lg ps-2 w-90">
+                <div class="col-lg-3 col-md-6">
+                    <div class="border-0 rounded-3  third-background position-relative mb-5 py-4 b-shadow ps-2 w-90">
                         <p class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">BEST
                         </p>
-                        <h1>$300</h1>
-                        <h3>Business Fair</h3>
-                        <p>For most businesses event <br>
-                            like book fair, craft fair.</p>
+                        <h2>$800</h2>
+                        <h3>Wedding Plus</h3>
+                        <p>For most wedding with <br>
+                            premium plans.</p>
                         <ul class="list-group list-group-flush">
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>Limited Space Access</li>
+                                </svg>Full Space Access</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Dedicated Team</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Buffet Food</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Premium Decoration</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Pay as Plan</li>
 
                         </ul>
-                        <button type="button" class=" mt-2 py-2 pink-button rounded-pill">Choose Plan</button>
+                        <button type="button" class="ban-button border-0 mt-2 px-4 py-2 rounded-pill"><a target="_blank"
+                                class="last-none" href="https://tinypng.com/">Choose Plan</a></button>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-6">
                     <div class="card border-0 mt-5 w-90">
-                        <h1>$300</h1>
-                        <h3>Business Fair</h3>
-                        <p>For most businesses event <br>
-                            like book fair, craft fair.</p>
+                        <h1>$1200</h1>
+                        <h3>Corporate Event</h3>
+                        <p>For most corporate business <br>
+                            event.</p>
                         <ul class="list-group list-group-flush">
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>Limited Space Access</li>
+                                </svg>Full Space Access</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Dedicated Team</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Buffet Food</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Premium Decoration</li>
                             <li class="list"><svg xmlns="http://www.w3.org/2000/svg" class="svg rounded-circle me-2"
                                     style="height:20px ; width:20px ;" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                         clip-rule="evenodd" />
-                                </svg>An item</li>
+                                </svg>Pay as Plan</li>
 
                         </ul>
-                        <button type="button" class=" mt-2 py-2 pink-button rounded-pill">Choose Plan</button>
+                        <button type="button" class=" mt-2 py-2 pink-button rounded-pill"><a target="_blank"
+                                class="last-none" href="https://tinypng.com/">Choose Plan</a></button>
                     </div>
                 </div>
             </div>
-
         </section>
-        <section class="container">
-            <h1 class="my-5 py-5 align-center">Frequently Asked Questions</h1>
+        <!-- accordion -->
+
+        <section class="pink-back container">
+            <h1 class="all-head my-5 py-5 text-center">Frequently Asked Questions</h1>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="accordion" id="accordionExample">
+                    <div class="mb-5 accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Accordion Item #1
+                                    <strong>What’s the difference between event design and event planning?</strong>
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until
-                                    the collapse plugin adds the appropriate classes that we use to style each element.
-                                    These classes control the overall appearance, as well as the showing and hiding via
-                                    CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Event design and event planning work hand in hand to deliver a successful
+                                    event.Events by Knight offer tailor made events. This means we incorporate both
+                                    event design and event planning to create that perfect event.
                                 </div>
                             </div>
                         </div>
@@ -342,19 +339,15 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Accordion Item #2
+                                    <strong>How early do we need to start planning an event?</strong>
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding
-                                    via CSS transitions. You can modify any of this with custom CSS or overriding our
-                                    default variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    The time to plan events varies from a few weeks to years. If your event is small,
+                                    you can probably put it together in a month or two. A good rule of thumb for any
+                                    major event, from weddings to a company holiday party, is six months.
                                 </div>
                             </div>
                         </div>
@@ -362,20 +355,16 @@
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Accordion Item #3
+                                    <strong>What is your refund and cancellation policy?</strong>
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until
-                                    the collapse plugin adds the appropriate classes that we use to style each element.
-                                    These classes control the overall appearance, as well as the showing and hiding via
-                                    CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Refund/cancellation policies applicable in the following conditions: a) In case, the
+                                    buyer cancels the order online before the product has been shipped, the entire order
+                                    amount will be refunded. Total order amount after deduction of shipment and
+                                    handling charges will be refunded.
                                 </div>
                             </div>
                         </div>
@@ -383,20 +372,16 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Accordion Item #3
+                                    <strong> How do you keep budgets on track?</strong>
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until
-                                    the collapse plugin adds the appropriate classes that we use to style each element.
-                                    These classes control the overall appearance, as well as the showing and hiding via
-                                    CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables. It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Budget management is essential for successful event management. It helps you think
+                                    and plan ahead, re-think and adjust your plans but also be prepared for any
+                                    unforeseen mishaps and any changes in the landscape throughout the planning and
+                                    execution of your event.
                                 </div>
                             </div>
                         </div>
@@ -406,9 +391,48 @@
                     <img class="w-100" src="./images/people.png" alt="">
                 </div>
             </div>
+        </section>
+        <!-- contact form -->
 
+        <section class="container">
+            <div class="row mt-5">
+                <div class="col-lg-5">
+                    <img src="./images/victoria-priessnitz-R0B0AnOw0Kg-unsplash.jpg" class="w-100" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div class="pink-back">
+                        <h1 class="last-cursive text-center ">Let's Get Started</h1>
+                        <h2 class="last-cursive mb-1 pb-5 text-center">Contact Us</h2>
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="First name"
+                                    aria-label="First name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                            <div class="col-12">
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="col-12">
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+
+
+                            <div class="col-12">
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="last-button py-2 px-4 rounded-3"><a target="_blank"
+                                            class="none-button" href="https://tinypng.com/">Sign In</a></button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <!-- footer -->
     <footer>
         <section class="container-fluid mt-5 py-5 bg-dark">
             <div class="container d-flex justify-content-between align-items-center ">
@@ -417,9 +441,12 @@
                 </div>
                 <div class="d-flex flex-column align-items-center">
                     <p class="text-white">Get the app</p>
-                    <button type="button" class=" m-2 p-0 border-0"><a href=""><img class="w-100"
-                                src="./images/270152317_255777569967760_7316592442369682871_n.png" alt=""></a></button>
-                    <button type="button" class=" m-0 p-0 border-0"><a href=""><img class="w-100"
+                    <button type="button" class=" m-2 p-0 border-0"><a target="_blank"
+                            href="https://play.google.com/store/apps/details?id=com.learnprogramming.codecamp"><img
+                                class="w-100" src="./images/270152317_255777569967760_7316592442369682871_n.png"
+                                alt=""></a></button>
+                    <button type="button" class=" m-0 p-0 border-0"><a target="_blank"
+                            href="https://www.apple.com/apple-tv-app/"><img class="w-100"
                                 src="./images/271820322_450480463465282_8217112429997224105_n.png" alt=""></a></button>
                 </div>
             </div>
